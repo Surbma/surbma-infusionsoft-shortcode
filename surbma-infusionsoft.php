@@ -3,9 +3,9 @@
 /*
 Plugin Name: Surbma - Infusionsoft Integration
 Plugin URI: http://surbma.com/
-GitHub Plugin URI: https://github.com/Surbma/surbma-infusionsoft
+GitHub Plugin URI: Surbma/surbma-infusionsoft
 Description: Integrate Infusionsoft with WordPress
-Version: 1.1.0
+Version: 1.1.1
 Author: Surbma
 Author URI: http://surbma.com/
 License: GPL2
