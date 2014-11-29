@@ -1,4 +1,4 @@
-Surbma - Infusionsoft Integration
+Surbma - Infusionsoft Shortcode
 ===================
 
-Integrate Infusionsoft with WordPress
+A simple shortcode to include Infusionsoft forms into WordPress.
