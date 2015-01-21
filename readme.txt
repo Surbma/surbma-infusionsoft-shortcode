@@ -4,7 +4,7 @@ Donate link: http://surbma.com/
 Tags: infusionsoft, shortcode
 Requires at least: 3.0
 Tested up to: 4.1
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,7 +30,7 @@ Where `account` is your choosen subdomain name without the `.infusionsoft.com` p
 
 This is the official description: Sales and marketing software for small business - Infusionsoft combines everything your business needs—contact management, CRM, marketing automation and e-commerce—into a single online system. It’s the easiest way to grow sales and save time.
 
-Official Infusionsoft website: <a herf="http://www.infusionsoft.com/" target="_blank">www.infusionsoft.com</a>
+Official Infusionsoft website: <a href="http://www.infusionsoft.com/" target="_blank">www.infusionsoft.com</a>
 
 = Can I customize the look of the form? =
 
@@ -41,6 +41,10 @@ No, you can't. You can control the look of your form in your Infusionsoft admin 
 It is the reverse version of my last name. ;)
 
 == Changelog ==
+
+= 1.2.3 =
+
+- Fixed description.
 
 = 1.2.2 =
 

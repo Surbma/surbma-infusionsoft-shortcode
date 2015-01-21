@@ -5,7 +5,7 @@ Plugin Name: Surbma - Infusionsoft Shortcode
 Plugin URI: http://surbma.com/wordpress-plugins/
 Description: A simple shortcode to include Infusionsoft forms into WordPress.
 
-Version: 1.2.2
+Version: 1.2.3
 
 Author: Surbma
 Author URI: http://surbma.com/
