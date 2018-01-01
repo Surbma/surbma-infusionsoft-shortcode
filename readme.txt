@@ -1,4 +1,4 @@
-=== Infusionsoft Shortcode ===
+=== Surbma - Infusionsoft Shortcode ===
 Contributors: Surbma
 Donate link: http://surbma.com/donate/
 Tags: infusionsoft, shortcode

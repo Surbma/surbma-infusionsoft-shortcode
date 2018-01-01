@@ -1,7 +1,7 @@
 <?php
 
 /*
-Plugin Name: Infusionsoft Shortcode
+Plugin Name: Surbma - Infusionsoft Shortcode
 Plugin URI: http://surbma.com/wordpress-plugins/
 Description: A simple shortcode to include Infusionsoft forms into WordPress.
 
