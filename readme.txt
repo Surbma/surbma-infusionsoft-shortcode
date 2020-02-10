@@ -1,10 +1,11 @@
-=== Surbma - Infusionsoft Shortcode ===
-Contributors: Surbma
-Donate link: http://surbma.com/donate/
+=== Surbma | Infusionsoft Shortcode ===
+Contributors: Surbma, CherryPickStudios
+Donate link: https://surbma.com/donate/
 Tags: infusionsoft, shortcode
-Requires at least: 4.0
-Tested up to: 4.9
-Stable tag: 1.2.4
+Requires at least: 5.1
+Tested up to: 5.3
+Stable tag: 2.0
+Requires PHP: 7.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,7 +22,7 @@ Where `account` is your choosen subdomain name without the `.infusionsoft.com` p
 == Installation ==
 
 1. Upload `surbma-infusionsoft-shortcode` folder to the `/wp-content/plugins/` directory
-2. Activate the Surbma - Infusionsoft Shortcode plugin through the 'Plugins' menu in WordPress
+2. Activate the Surbma | Infusionsoft Shortcode plugin through the 'Plugins' menu in WordPress
 3. That's it. Now you can use the shortcode. :)
 
 == Frequently Asked Questions ==
@@ -41,6 +42,13 @@ No, you can't. You can control the look of your form in your Infusionsoft admin 
 It is the reverse version of my last name. ;)
 
 == Changelog ==
+
+= 2.0 =
+
+Release date: 2020-02-10
+
+- TWEAK - Tested with WordPress 5.3 version.
+- TWEAK - Updated to use a new way to deploy it to wp.org repo.
 
 = 1.2.4 =
 

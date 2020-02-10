@@ -1,14 +1,14 @@
 <?php
 
 /*
-Plugin Name: Surbma - Infusionsoft Shortcode
-Plugin URI: http://surbma.com/wordpress-plugins/
+Plugin Name: Surbma | Infusionsoft Shortcode
+Plugin URI: https://surbma.com/wordpress-plugins/
 Description: A simple shortcode to include Infusionsoft forms into WordPress.
 
-Version: 1.2.4
+Version: 2.0
 
 Author: Surbma
-Author URI: http://surbma.com/
+Author URI: https://surbma.com/
 
 License: GPLv2
 
