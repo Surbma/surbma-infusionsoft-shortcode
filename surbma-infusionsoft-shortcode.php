@@ -5,7 +5,7 @@ Plugin Name: Surbma | Infusionsoft Shortcode
 Plugin URI: https://surbma.com/wordpress-plugins/
 Description: A simple shortcode to include Infusionsoft forms into WordPress.
 
-Version: 2.0
+Version: 2.0.1
 
 Author: Surbma
 Author URI: https://surbma.com/
@@ -28,10 +28,32 @@ function surbma_infusionsoft_shortcode_init() {
 add_action( 'plugins_loaded', 'surbma_infusionsoft_shortcode_init' );
 
 function surbma_infusionsoft_shortcode_shortcode( $atts ) {
-	extract( shortcode_atts( array(
-		"account" => '',
-		"id" => ''
-	), $atts ) );
-	return '<script type="text/javascript" src="https://'.$account.'.infusionsoft.com/app/form/iframe/'.$id.'"></script>';
+	$atts = shortcode_atts(
+		array(
+			'account' => '',
+			'id'      => '',
+		),
+		$atts,
+		'infusionsoft-form'
+	);
+
+	$account = $atts['account'];
+	$id      = $atts['id'];
+
+	if ( '' === $account || '' === $id ) {
+		return '';
+	}
+
+	if ( ! preg_match( '/^[a-zA-Z0-9-]+$/', $account ) || ! preg_match( '/^[a-zA-Z0-9-]+$/', $id ) ) {
+		return '';
+	}
+
+	$url = sprintf(
+		'https://%s.infusionsoft.com/app/form/iframe/%s',
+		$account,
+		$id
+	);
+
+	return '<script type="text/javascript" src="' . esc_url( $url ) . '"></script>';
 }
 add_shortcode( 'infusionsoft-form', 'surbma_infusionsoft_shortcode_shortcode' );

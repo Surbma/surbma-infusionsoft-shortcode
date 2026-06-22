@@ -4,7 +4,7 @@ Donate link: https://surbma.com/donate/
 Tags: infusionsoft, shortcode
 Requires at least: 5.1
 Tested up to: 6.2
-Stable tag: 2.0
+Stable tag: 2.0.1
 Requires PHP: 7.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -42,6 +42,10 @@ No, you can't. You can control the look of your form in your Infusionsoft admin 
 It is the reverse version of my last name. ;)
 
 == Changelog ==
+
+= 2.0.1 =
+
+- SECURITY - Escape shortcode output and validate account/id attributes to prevent stored XSS.
 
 = 2.0 =
 
