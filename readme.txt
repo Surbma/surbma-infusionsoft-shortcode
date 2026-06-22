@@ -3,8 +3,8 @@ Contributors: Surbma, CherryPickStudios
 Donate link: https://surbma.com/donate/
 Tags: infusionsoft, shortcode
 Requires at least: 5.1
-Tested up to: 6.2
-Stable tag: 2.0.1
+Tested up to: 7.0
+Stable tag: 2.0.2
 Requires PHP: 7.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -42,6 +42,14 @@ No, you can't. You can control the look of your form in your Infusionsoft admin 
 It is the reverse version of my last name. ;)
 
 == Changelog ==
+
+= 2.0.2 =
+
+Release date: 2026-06-22
+
+- TWEAK - Refactored plugin to use closures and modern WordPress coding patterns.
+- TWEAK - Strip HTML from shortcode attributes and restrict script URL to HTTPS.
+- TWEAK - Tested with WordPress 7.0 version.
 
 = 2.0.1 =
 

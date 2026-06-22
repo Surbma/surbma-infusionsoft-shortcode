@@ -5,7 +5,7 @@ Plugin Name: Surbma | Infusionsoft Shortcode
 Plugin URI: https://surbma.com/wordpress-plugins/
 Description: A simple shortcode to include Infusionsoft forms into WordPress.
 
-Version: 2.0.1
+Version: 2.0.2
 
 Author: Surbma
 Author URI: https://surbma.com/
@@ -17,17 +17,14 @@ Domain Path: /languages/
 */
 
 // Prevent direct access to the plugin
-if ( !defined( 'ABSPATH' ) ) {
-	die( 'Good try! :)' );
-}
+defined( 'ABSPATH' ) || exit;
 
 // Localization
-function surbma_infusionsoft_shortcode_init() {
+add_action( 'init', function() {
 	load_plugin_textdomain( 'surbma-infusionsoft-shortcode', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-}
-add_action( 'plugins_loaded', 'surbma_infusionsoft_shortcode_init' );
+} );
 
-function surbma_infusionsoft_shortcode_shortcode( $atts ) {
+add_shortcode( 'infusionsoft-form', function( $atts ) {
 	$atts = shortcode_atts(
 		array(
 			'account' => '',
@@ -37,8 +34,11 @@ function surbma_infusionsoft_shortcode_shortcode( $atts ) {
 		'infusionsoft-form'
 	);
 
-	$account = $atts['account'];
-	$id      = $atts['id'];
+	$account = isset( $atts['account'] ) ? $atts['account'] : '';
+	$account = is_string( $account ) ? wp_strip_all_tags( $account ) : '';
+
+	$id = isset( $atts['id'] ) ? $atts['id'] : '';
+	$id = is_string( $id ) ? wp_strip_all_tags( $id ) : '';
 
 	if ( '' === $account || '' === $id ) {
 		return '';
@@ -54,6 +54,5 @@ function surbma_infusionsoft_shortcode_shortcode( $atts ) {
 		$id
 	);
 
-	return '<script type="text/javascript" src="' . esc_url( $url ) . '"></script>';
-}
-add_shortcode( 'infusionsoft-form', 'surbma_infusionsoft_shortcode_shortcode' );
+	return '<script type="text/javascript" src="' . esc_url( $url, array( 'https' ) ) . '"></script>';
+} );
